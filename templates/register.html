@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/login.css">
+    <title>Education</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Hello, Co-Student!</h1>
+            <p>Login Here to experience our site features</p>
+            <a href="{{url_for('login')}}">Log In</a>
+        </div>
+        <div class="right">
+            <h1>Ease<span>Edu</span></h1>
+            <form action="{{url_for('index')}}" method = "POST">
+
+                <div class= "col">
+                    <label for = ""> Name</label>
+                    <input type = "text" name = "name" id = "">
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="">Gender</label>
+                        <select name="gender" id="">
+                            <option value="True">Male</option>
+                            <option value="False">Female</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                    <label for="">Age</label>
+                    <input type="text" name="age" id="">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="">
+                </div>
+
+
+                <div class="col">
+                    <label for="">Password</label>
+                    <input type="password" name="password" id="">
+                </div>
+
+                <input type="submit" value="Sign-in">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
